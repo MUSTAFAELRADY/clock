@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100vw;
+    height: 75vh;
+    background-color: #555;
+    position: relative;
+    padding-top: 30%;
+}
+
+.div-clock {
+    position: relative;
+    background-color: #444;
+    width: 40%;
+    height: 40%;
+    margin: auto;
+    border-radius: 40%;
+    border: 5px solid red;
+    overflow: hidden;
+}
+
+.circle {
+    position: absolute;
+    background-color: red;
+    width: 20px;
+    height: 20px;
+    top: calc(50% - 10px);
+    right: calc(50% - 10px);
+    z-index: 2;
+    border-radius: 50%;
+
+}
+
+.seconds,
+.mins,
+.hours {
+    position: absolute;
+    width: 45%;
+    height: 5px;
+    background-color: red;
+    top: 50%;
+    right: 50%;
+    left: 50;
+    transform: rotate(270deg);
+    transform-origin: 100%;
+    transition: all 0.1;
+    transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+span {
+    position: absolute;
+    color: aquamarine;
+    width: 80px;
+    height: 80px;
+    top: 50%;
+}
+
+span#a {
+    left: 91%;
+    color: beige;
+    top: calc(50% - 20px);
+    font-size: 30px;
+
+}
+
+span#c {
+    left: 1%;
+    color: beige;
+    top: calc(50% - 20px);
+    font-size: 30px;
+
+}
+
+span#b {
+    left: calc(50% - 10px);
+    top: calc(90% - 10px);
+    color: beige;
+    font-size: 30px;
+
+}
+
+span#d {
+    left: calc(50% - 15px);
+    top: calc(0.5% - 5px);
+    color: beige;
+    font-size: 30px;
+
+}
+
+.fixed {
+    width: 26%;
+    height: 2rem;
+    /* margin: auto; */
+    background-color: #444;
+    position: fixed;
+    bottom: 30%;
+    left: calc(50% - 13%);
+    text-align: center;
+    font-size:15px;
+padding: 10px;
+color: red;
+border-radius: 20px;
+border: 5px red solid;
+}
